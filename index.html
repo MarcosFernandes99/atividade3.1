@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,36 +8,57 @@
     <link rel="stylesheet" href="style.css">
     <title>Atividade 3.1</title>
 </head>
+
 <body>
-    
-    <form action="registration">
-        <label for="Name">Nome:</label>
-        <input type="text" name="Name" id="Name">
-        <label for="address">Endereço:</label>
-        <input type="text" name="address" id="address">
-        <label for="operation">Dias da semana que abre:</label>
-                <label for="Segunda">Segunda</label>
-                <input id="Segunda" type="checkbox" name="Segunda" value="Segunda">
-                <label for="Terça">Terça</label>
-                <input id="Terça" type="checkbox" name="Terça" value="Terça">
-                <label for="Quarta">Quarta</label>
-                <input id="Quarta" type="checkbox" name="Quarta" value="Quarta">
-                <label for="Quinta">Quinta</label>
-                <input id="Quinta" type="checkbox" name="Quinta" value="Quinta">
-                <label for="Sexta">Sexta</label>
-                <input id="Sexta" type="checkbox" name="Sexta" value="Sexta">
-                <label for="Sábado">Sábado</label>
-                <input id="Sábado" type="checkbox" name="Sábado" value="Sábado">
-                <label for="Domingo">Domingo</label>
-                <input id="Domingo" type="checkbox" name="Domingo" value="Domingo"> 
-        <label for="open">Horário de abertura:</label>
-        <input type="text" name="open" id="open">
-        <label for="close">Horário de fechamento:</label>
-        <input type="text" name="close" id="close">
+    <div class="container">
 
-    </form>
+       <div id="flexForm">
 
-    
+            <div class="formItem" style="grid-area: i1;">
+                <label class="field" for="Name">Nome:</label>
+                <input type="text" name="Name" id="Name">
+            </div>
+
+            <div class="formItem" style="grid-area: i2;">
+                <label class="field" for="address">Endereço:</label>
+                <input type="text" name="address" id="address">
+            </div>
+            
+            <div class="formItem" style="grid-area: i3;">
+                <label for="operation">Dias da semana que abre:</label><br>
+                <input id="Segunda" type="checkbox" name="Segunda" value="Segunda">Segunda
+                <input id="Terça" type="checkbox" name="Terça" value="Terça">Terça      
+                <input id="Quarta" type="checkbox" name="Quarta" value="Quarta">Quarta
+                <input id="Quinta" type="checkbox" name="Quinta" value="Quinta">Quinta
+                <input id="Sexta" type="checkbox" name="Sexta" value="Sexta">Sexta
+                <input id="Sábado" type="checkbox" name="Sábado" value="Sábado">Sábado
+                <input id="Domingo" type="checkbox" name="Domingo" value="Domingo">Domingo
+            </div>
+
+            <div class="formItem" style="grid-area: i4;">
+                <label class="field" for="open">Horário de abertura:</label>
+                <input type="text" name="open" id="open">
+            </div>
+
+            <div class="formItem" style="grid-area: i5;">
+                <label class="field" for="close">Horário de fechamento:</label>
+                <input type="text" name="close" id="close">
+            </div>
+            
+            <div class="formItem" style="order: 6; grid-area: i6;">
+                <button id="submit" type="submit">Cadastrar</button>
+            </div>
+
+            <div class="responsividade">
+                <button id="vertical">Mudar para vertical</button>
+                <button id="grid">Mudar para grid</button>
+            </div>
+            
+
+        </div>
+    </div>
+
 </body>
-    <script src=""></script>
+<script src="javaScript.js"></script>
+
 </html>
